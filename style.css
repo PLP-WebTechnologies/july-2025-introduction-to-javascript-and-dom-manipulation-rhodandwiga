@@ -1,0 +1,96 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Card */
+.container {
+  background: #ffffff20;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #ffe066;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Message Text */
+#message {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.buttons button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #ffe066;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  background: #ffd43b;
+}
+
+/* Active Class Toggle */
+.active {
+  color: white !important;
+  background-color: #ff6b6b !important;
+  box-shadow: 0 4px 15px rgba(255,107,107,0.8) !important;
+}
+
+/* Subject List */
+#subjectList {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#subjectList li {
+  background: #fff;
+  color: #333;
+  margin: 8px auto;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.6s forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+  to { transform: translateY(0); opacity: 1; }
+}
